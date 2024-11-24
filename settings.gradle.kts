@@ -25,3 +25,4 @@ dependencyResolutionManagement {
 rootProject.name = "KotlinTemplate"
 
 include(":lib")
+include(":utils")
