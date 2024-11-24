@@ -3,9 +3,6 @@ name: 'ビルドできるか確認'
 on:
   workflow_dispatch:
   push:
-  pull_request:
-    types:
-      - opened
 
 jobs:
   build:
