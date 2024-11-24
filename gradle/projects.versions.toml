@@ -1,0 +1,3 @@
+[plugins]
+# Ktlint
+ktlint = { id = "com.template.ktlint", version = "unspecified" }
