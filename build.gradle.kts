@@ -1,11 +1,8 @@
 plugins {
-    kotlin("jvm") version libs.versions.kotlin apply false
-    alias(projects.plugins.ktlint)
+    alias(libs.plugins.kotlin) apply false
+    alias(libs.plugins.ktlint)
 }
 
-buildscript {
-    dependencies {
-        classpath(libs.gradle.kotlin)
-        classpath(libs.gradle.ksp)
-    }
+tasks.register<Delete>(name = "clean") {
+    delete(rootProject.layout.buildDirectory)
 }

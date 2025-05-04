@@ -1,8 +1,14 @@
 plugins {
-    kotlin("jvm")
+    alias(buildLogic.plugins.kotlin.multiplatform)
 }
 
-dependencies {
-    implementation(libs.kotlin.coroutine)
-    implementation(libs.kotlin.datetime)
+kotlin {
+    sourceSets {
+        val commonMain by getting {
+            dependencies {
+                implementation(libs.kotlin.coroutine)
+                implementation(libs.kotlin.datetime)
+            }
+        }
+    }
 }

@@ -1,0 +1,2 @@
+[plugins]
+kotlin-multiplatform = { id = "com.wsr.multiplatform", version = "unspecified" }
