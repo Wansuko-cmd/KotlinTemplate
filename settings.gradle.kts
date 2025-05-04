@@ -25,5 +25,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "KotlinTemplate"
 
-include(":lib")
-include(":utils")
+include(":jvm")
+include(":shared")

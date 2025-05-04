@@ -14,7 +14,7 @@ class KotlinMultiPlatformPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             with(pluginManager) {
-                alias(libs.getPlugin("kotlin"))
+                alias(libs.getPlugin("kotlin.multiplatform"))
             }
 
             @OptIn(ExperimentalKotlinGradlePluginApi::class)
