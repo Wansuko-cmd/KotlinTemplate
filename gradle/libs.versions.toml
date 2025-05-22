@@ -5,7 +5,7 @@ coroutine = "1.10.2"
 datetime = "0.6.2"
 
 # Ktlint
-ktlint = "12.2.0"
+ktlint = "12.3.0"
 
 [libraries]
 # Kotlin
