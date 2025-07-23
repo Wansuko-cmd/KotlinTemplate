@@ -9,6 +9,7 @@ class KotlinJvmPlugin : Plugin<Project> {
         with(target) {
             with(pluginManager) {
                 alias(libs.getPlugin("kotlin.jvm"))
+                alias(libs.getPlugin("ktlint"))
             }
         }
     }

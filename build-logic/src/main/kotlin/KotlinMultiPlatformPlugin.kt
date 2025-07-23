@@ -8,13 +8,13 @@ import org.gradle.api.plugins.ExtensionAware
 import org.gradle.kotlin.dsl.configure
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension
-import org.jetbrains.kotlin.gradle.dsl.KotlinTargetContainerWithPresetFunctions
 
 class KotlinMultiPlatformPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             with(pluginManager) {
                 alias(libs.getPlugin("kotlin.multiplatform"))
+                alias(libs.getPlugin("ktlint"))
             }
 
             @OptIn(ExperimentalKotlinGradlePluginApi::class)
